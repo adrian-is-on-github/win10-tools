@@ -34,22 +34,15 @@ netsh wfp set options netevents=off
 NO MORE CANDY CRUSH:
 regedit - CDM
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
-There, you want to double click on SilentInstalledAppsEnabled and set the value to 0
+SilentInstalledAppsEnabled and set the value to 0
 
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings
-set defer updates on or off
+Set defer updates on or off
 
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
-set branch to update and defer days (20 is the business branch)
+Set branch to update and defer days (20 is the business branch)
 
-
-NO MORE LOCK SCREEN TIMEOUT
-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization
-If you do not see the Personalization key, right-click the Windows key above it, point to New, and create a key named Personalization.
-Right-click in the right pane and create a new DWORD value named NoLockScreen.
-Double-click the NoLockScreen value and enter a value of 1.
-
-
+#Policy Editor Changes for Reference. Will script these
 Setting	State	Comment
 Windows Update for Business		
 Do not display 'Install Updates and Shut Down' option in Shut Down Windows dialog box	Not configured	No
