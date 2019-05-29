@@ -1,0 +1,85 @@
+#list all applications
+Get-AppxPackage
+
+#these are easy ones to remove
+Get-AppxPackage *Microsoft.People* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Microsoft3DViewer* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.StorePurchaseApp* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGameOverlay* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.3DBuilder* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxSpeechToText* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGameCall* | Remove-AppxPackage
+
+Get-AppxPackage *Microsoft.Advertising* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.ZuneVideo* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxApp* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.BingNews* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Office.OneNote* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.WindowsMaps* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Windows.Photos* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.WindowsStore* | Remove-AppxPackage
+Get-AppxPackage *yourphone* | Remove-AppxPackage
+Get-AppxPackage *windowscamera* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Services.Store.Engagement* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Wallet* | Remove-AppxPackage
+
+
+END CONSTANT DISK WRITING:  
+netsh wfp set options netevents=off
+
+NO MORE CANDY CRUSH:
+regedit - CDM
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+There, you want to double click on SilentInstalledAppsEnabled and set the value to 0
+
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings
+set defer updates on or off
+
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
+set branch to update and defer days (20 is the business branch)
+
+
+NO MORE LOCK SCREEN TIMEOUT
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization
+If you do not see the Personalization key, right-click the Windows key above it, point to New, and create a key named Personalization.
+Right-click in the right pane and create a new DWORD value named NoLockScreen.
+Double-click the NoLockScreen value and enter a value of 1.
+
+
+Setting	State	Comment
+Windows Update for Business		
+Do not display 'Install Updates and Shut Down' option in Shut Down Windows dialog box	Not configured	No
+Do not adjust default option to 'Install Updates and Shut Down' in Shut Down Windows dialog box	Not configured	No
+Enabling Windows Update Power Management to automatically wake up the system to install scheduled updates	Not configured	No
+Turn off auto-restart for updates during active hours	Not configured	No
+Specify active hours range for auto-restarts	Not configured	No
+Allow updates to be downloaded automatically over metered connections	Not configured	No
+Always automatically restart at the scheduled time	Not configured	No
+Specify deadline before auto-restart for update installation	Not configured	No
+Configure auto-restart reminder notifications for updates	Not configured	No
+Turn off auto-restart notifications for update installations	Not configured	No
+Configure auto-restart required notification for updates	Not configured	No
+Configure Automatic Updates	Enabled	No
+Specify intranet Microsoft update service location	Not configured	No
+Automatic Updates detection frequency	Not configured	No
+Do not allow update deferral policies to cause scans against Windows Update	Not configured	No
+Remove access to use all Windows Update features	Not configured	No
+Do not connect to any Windows Update Internet locations	Not configured	No
+Allow non-administrators to receive update notifications	Not configured	No
+Specify Engaged restart transition and notification schedule for updates	Not configured	No
+Do not include drivers with Windows Updates	Enabled	No
+Turn on Software Notifications	Not configured	No
+Allow Automatic Updates immediate installation	Not configured	No
+Turn on recommended updates via Automatic Updates	Not configured	No
+No auto-restart with logged on users for scheduled automatic updates installations	Enabled	No
+Re-prompt for restart with scheduled installations	Not configured	No
+Delay Restart for scheduled installations	Not configured	No
+Reschedule Automatic Updates scheduled installations	Not configured	No
+Configure auto-restart warning notifications schedule for updates	Not configured	No
+Update Power Policy for Cart Restarts	Not configured	No
+Enable client-side targeting	Not configured	No
+Allow signed updates from an intranet Microsoft update service location 	Not configured	No
