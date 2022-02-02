@@ -4,27 +4,16 @@ Get-AppxPackage
 #these are the easy ones to remove
 Get-AppxPackage *Microsoft.People* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Microsoft3DViewer* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.StorePurchaseApp* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxGameOverlay* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.3DBuilder* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxSpeechToText* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxGameCall* | Remove-AppxPackage
-
 Get-AppxPackage *Microsoft.Advertising* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.ZuneVideo* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxApp* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingNews* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Office.OneNote* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.WindowsMaps* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Windows.Photos* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.WindowsStore* | Remove-AppxPackage
 Get-AppxPackage *yourphone* | Remove-AppxPackage
-Get-AppxPackage *windowscamera* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.Services.Store.Engagement* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Wallet* | Remove-AppxPackage
 
 #----------------------------
